@@ -1,9 +1,19 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import CreateStudent from './pages/CreateStudent';
+import ListStudents from './pages/ListStudents';
 
 function App() {
   return (
     <div className="App">
-      <h1>teste</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/create-student" element={<CreateStudent />} />
+          <Route path="/list-students" element={<ListStudents />} />
+        </Routes>
+    </Router>
     </div>
   );
 }
