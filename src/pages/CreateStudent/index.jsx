@@ -31,7 +31,7 @@ const CreateStudent = () => {
     return (
         <>
         <NavBar/>
-
+        <h1>Home Page</h1>
       
         <div>
             <form onSubmit={handleSubmit}>
